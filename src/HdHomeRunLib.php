@@ -1,6 +1,6 @@
 <?php
 
-namespace EW\HdHomeRun;
+namespace HdHomeRun;
 
 /**
  * HDHomeRun library
