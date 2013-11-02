@@ -287,10 +287,10 @@ class HdHomeRunLib
      * Throw exception of proper type
      *
      * @param $message
-     * @throws HdHomeRunConfigException
+     * @throws HdHomeRunException
      */
     protected function _throwException($message) {
-        throw new HdHomeRunConfigException($this, $message);
+        throw new HdHomeRunException($this, $message);
     }
 
     /**
@@ -509,28 +509,5 @@ class HdHomeRunLib
         $this->log($status, self::LOG_LEVEL_DEBUG);
 
         return $status;
-    }
-}
-
-
-//exceptions
-class HdHomeRunConfigException extends Exception
-{
-    /** @var HdHomeRunConfig */
-    protected $_configInstance = null;
-
-    public function __construct(HdHomeRunConfig $configInstance, $message) {
-        $this->_configInstance = $configInstance;
-
-        $this->_configInstance->log($message, HdHomeRunConfig::LOG_LEVEL_ERROR);
-
-        return parent::__construct($message);
-    }
-
-    /**
-     * @return HdHomeRunConfig
-     */
-    public function getConfigInstance() {
-        return $this->_configInstance;
     }
 }
