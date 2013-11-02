@@ -1,5 +1,6 @@
 {
     "name": "ericthehacker/libhdhomerun",
+    "version": "0.0.1",
     "description": "PHP library wrapper for hdhomerun_config",
     "authors": [
         {
