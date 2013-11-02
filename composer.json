@@ -1,6 +1,13 @@
 {
     "name": "ericthehacker/libhdhomerun",
+    "description": "PHP library wrapper for hdhomerun_config",
+    "authors": [
+        {
+            "name": "Eric Wiese",
+            "email": "eric@ericwie.se"
+        }
+    ],
     "require": {
-        "php": ">=5.4.0"
+	
     }
 }
