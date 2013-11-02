@@ -1,0 +1,6 @@
+{
+    "name": "ericthehacker/libhdhomerun",
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
